@@ -1,0 +1,62 @@
+# Casos de Prueba para el Parser
+
+# 1. Operaciones aritméticas básicas
+echo "5 + 3 * 2" | ./interpreter
+
+# 2. Precedencia con paréntesis
+echo "(5 + 3) * 2" | ./interpreter
+
+# 3. Operaciones lógicas
+echo "true and false or true" | ./interpreter
+
+# 4. Operaciones de comparación
+echo "10 > 5 and 3 < 7" | ./interpreter
+
+# 5. Binding de variables simple
+echo "let(x)(10)(x + 5)" | ./interpreter
+
+# 6. Binding de variables anidado
+echo "let(x)(10)(let(y)(20)(x + y))" | ./interpreter
+
+# 7. Expresión condicional simple
+echo "if(5 > 3)(42)" | ./interpreter
+
+# 8. Expresión condicional con else
+echo "if(false)(10) else (20)" | ./interpreter
+
+# 9. Conversión de tipos
+echo "itos(42)" | ./interpreter
+echo "rtos(3.14)" | ./interpreter
+
+# 10. Concatenación de strings
+echo '"Hola" # " mundo"' | ./interpreter
+
+# 11. Concatenación con conversión
+echo 'itos(42) # " es la respuesta"' | ./interpreter
+
+# 12. Print simple
+echo 'print("Hola mundo")' | ./interpreter
+
+# 13. Print con variable
+echo 'let(mensaje)("Buenos días")(print(mensaje))' | ./interpreter
+
+# 14. Operación compleja con variables y condicionales
+echo 'let(x)(10)(let(y)(5)(if(x > y)(x + y) else (x - y)))' | ./interpreter
+
+# 15. Pares
+echo "pair(1)(2)" | ./interpreter
+
+# 16. Números reales
+echo "3.14 + 2.86" | ./interpreter
+
+# 17. Operación con módulo
+echo "17 % 5" | ./interpreter
+
+# 18. Negación lógica
+echo "not false" | ./interpreter
+
+# 19. XOR lógico
+echo "true xor false" | ./interpreter
+
+# 20. Comparaciones múltiples
+echo "5 <= 10 and 3 >= 1" | ./interpreter

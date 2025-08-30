@@ -1,0 +1,44 @@
+# Archivo de pruebas para el parser del compilador
+# Este archivo contiene expresiones de ejemplo para probar las diferentes funcionalidades
+
+# Operaciones aritméticas básicas
+5 + 3
+
+# Operaciones con precedencia
+2 + 3 * 4
+
+# Operaciones con paréntesis
+(2 + 3) * 4
+
+# Números reales
+3.14 + 2.86
+
+# Operaciones lógicas
+true and false
+
+# Operaciones de comparación
+5 > 3
+
+# Concatenación de strings
+"Hola" # " mundo"
+
+# Conversiones de tipo
+itos(42)
+
+# Operaciones con variables (let binding)
+let(x)(10)(x + 5)
+
+# Expresiones condicionales
+if(5 > 3)(42)
+
+# Expresiones condicionales con else
+if(false)(10) else (20)
+
+# Pares
+pair(1)(2)
+
+# Print
+print("Hola mundo")
+
+# Expresiones complejas
+let(x)(10)(let(y)(20)(x + y * 2))
